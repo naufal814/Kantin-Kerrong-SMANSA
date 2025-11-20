@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantin Kerrong SMANSA</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Italic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">kantin<span>kerrong</span>SMANSA</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+     <div class="navbar-extra">
+   
+    <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+     </div>
+</nav>
+
+<!-- navbar end -->
+
+ <!-- hero sectiion start -->
+<section class="hero" id="home">
+  <main class="content">
+    <h1>Mari Nikmati Jajanan di Kantin Kerrong <span>SMANSA</span></h1>
+    <p>since 2022</p>
+    <a href="#menu" class="btn">beli sekarang</a>
+    
+  </main>
+</section>
+ <!-- hero sectiion end -->
+
+<!-- about section start -->
+<!-- about section start -->
+
+<section id="about" class="about">
+  <h2><span>Tentang</span> Kantin</h2>
+
+  <div class="row">
+    <div class="about-img">
+      <img src="about.jpg" alt="Tentang Kami">
+    </div>
+
+    <div class="content">
+      <p>Kantin Kerrong SMANSA telah menggunakan dua metode pembayaran, yaitu tunai dan digital melalui QRIS.</p>
+      <p>Setiap transaksi di kasir akan ditukar dengan voucher yang menjadi alat pembayaran resmi di lingkungan Kantin Kerrong SMANSA.</p>
+    </div>
+  </div>
+
+</section>
+<!-- about section end -->
+
+<!-- menu section start -->
+<section id="menu" class="menu">
+  <h2><span>Menu</span> Kami</h2>
+  <p>Kantin Kerrong SMANSA menawarkan beragam menu lezat yang pasti membuat kamu ingin coba lagi.<p>
+
+  <div class="row">
+    <div class="menu-card">
+      <img src="menu.jpg" alt="Menu Kami" class="menu-card-img">
+      <h3 class="menu-card-title">-Menu-</h3>
+    </div>
+  </div>
+</section>
+
+<!-- menu section end -->
+
+<!-- contact section start -->
+ <section id="contact" class="contact">
+  <h2><span>Kontak</span> Kami</h2>
+  <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor et ipsum reprehenderit perferendis. Facere, debitis?</p> -->
+
+  <div class="row">
+    
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7276007953838!2d113.48249519999997!3d-7.157459199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd77dfcbd8c1c7d%3A0x73e9f83f6ab57f1a!2sSMA%20Negeri%201%20Pamekasan!5e0!3m2!1sid!2sid!4v1763473063351!5m2!1sid!2sid" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade" 
+      class="map">
+    </iframe>
+
+    <form action="">
+      <div class="input-group">
+        <i data-feather="user"></i>
+        <p>SMA Negeri 1 Pamekasan</p>
+        <input type="text" placeholder="nama">
+      </div>
+
+      <div class="input-group">
+        <i data-feather="phone"></i>
+        <input type="text" placeholder="email">
+        <p>(0324) 332131</p>
+      </div>
+
+      <div class="input-group">
+        <i data-feather="map-pin"></i>
+        <p>Jl. Pramuka No.2, Rw. 08, Barurambat Kota, Kec. Pamekasan, Kabupaten Pamekasan, Jawa Timur 69317</p>
+        <input type="text" placeholder="no. hp">
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- contact section end -->
+
+<!-- footer start -->
+<footer>
+  <div class="socials">
+    <a href="https://www.instagram.com/smansapamekasan?igsh=MmgyNTl1aDJhYnJ0" target="blank"><i data-feather="instagram"></i></a>
+  </div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#about">Tentang</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Kontak</a>
+  </div>
+  <div class="credit">
+    <p>Created by <span>Murid SMANSA</span>
+      <a>. | &copy 2025.</a>
+
+<!-- footer end -->
+
+<script>
+  feather.replace();
+
+  // Inisialisasi elemen setelah HTML dimuat
+  const navbarNav = document.querySelector('.navbar-nav');
+  const hamburger = document.querySelector('#hamburger-menu');
+
+  // ketika hamburger menu diklik (menampilkan)
+  hamburger.onclick = (e) => {
+    e.preventDefault(); // Mencegah aksi default link (misal: refresh halaman)
+    navbarNav.classList.toggle('active');
+  };
+
+  // klik di luar sidebar untuk menghilangkan nav
+  document.addEventListener('click', function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove('active');
+    }
+  });
+</script>
+<!-- my js -->
+<script src="script.js"></script>
+</body>
+</html>
