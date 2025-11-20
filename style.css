@@ -39,9 +39,9 @@ body {
 
 .navbar .navbar-logo {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: rgb(0, 0, 0);
-  font-style: italic;
+  font-family: "Playfair Display", serif;
 }
 
 .navbar .navbar-logo span {
