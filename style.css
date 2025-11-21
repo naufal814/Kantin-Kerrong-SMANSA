@@ -230,6 +230,19 @@ text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
   font-size: 1.6rem;
   font-weight: 600;
 }
+.menu-qris-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* jarak antar gambar */
+  margin-top: 1rem;
+}
+
+.menu-qris-container img {
+  max-width: 150px;   /* biar kedua gambar ukurannya seragam */
+  border-radius: 12px;
+}
+
 
 /* contact section */
 .contact {
