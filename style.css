@@ -233,15 +233,18 @@ text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 .menu-qris-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px; /* jarak antar gambar */
-  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .menu-qris-container img {
-  max-width: 150px;   /* biar kedua gambar ukurannya seragam */
+  width: 45%;          /* dua gambar berdampingan rapi */
+  max-width: 200px;    /* batas maksimal */
+  height: auto;
   border-radius: 12px;
 }
+
 
 
 /* contact section */
@@ -433,6 +436,11 @@ footer .socials a {
 
   .about .row .content p {
     font-size: 1.6rem;
+  }
+
+  .menu-qris-container img {
+    width: 80%;        /* di HP gambar jadi satu per baris */
+    max-width: 250px;
   }
 
   .contact .row {
